@@ -139,7 +139,7 @@ header a:hover{
 .container {
     display: flex;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 120px;
     align-items: center;
     justify-content: center;
     margin-bottom: 110px;
@@ -176,12 +176,12 @@ header a:hover{
 }
 
 .main-info h2 {
-    font-size: 95px;
+    font-size: 85px;
     font-weight: 500;
     margin: 0;
 }
 .main-info p {
-    font-size: 20px;
+    font-size:18px;
     font-weight: 100;
     margin: 0;
 }
@@ -202,11 +202,11 @@ header a:hover{
     align-items: start;
     justify-content: start;
     text-align: start;
-    width: 220px;
-    height: 270px;
+    width: 200px;
+    height: 200px;
     flex-direction: column; 
     background-color: white;
-    gap: 1rem;
+    gap: .2rem;
     padding: 30px 30px 30px 30px; 
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -215,15 +215,14 @@ header a:hover{
 .card-escolar h3 , .card-turismo h3 {
     margin: 0;
     font-weight: 500;
-    font-size:35px ;
+    font-size:25px ;
 }
 
 .card-escolar p , .card-turismo p {
     font-size: 20px;
-    margin-top: 30px ;
-    margin-bottom: 20px;
+    margin-top: 10px ;
+    margin-bottom: 10px;
   
-    margin-bottom: 15px;
     font-family: 'poppins', sans-serif;
 }
 
@@ -233,7 +232,7 @@ header a:hover{
     border: none;
     background-color: var(--azul-escuro);
     border-radius: 20px;
-    margin-top: 20px ;
+    
     padding: 5px 15px;
     transition: .5s;
 }
@@ -260,7 +259,7 @@ header a:hover{
 .info-direita {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
     transition: 1s;
     transform: translatey(-100%);
     opacity: 1;
@@ -275,30 +274,31 @@ header a:hover{
 
 .dual-card-direita {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .card-esquerda {
     background-color: var(--azul-escuro);
-    width: 240px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     padding: 20px 25px; 
     border-radius: 20px;
 }
 .card-esquerda img {
     
-   width: 55px;
+   width: 45px;
 }
 
 .card-esquerda p  {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
+    margin-top: 10px;
 }
 
 .card-direita {
     background-color: white;
-    width: 240px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     padding: 20px 25px; 
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -306,6 +306,12 @@ header a:hover{
 
 .card-direita p {
     font-size: 20px;
+    margin-top: 10px;
+}
+
+.card-direita img {
+    width: 40px;
+    margin-bottom: 0px;
 }
 
 .img-van {
@@ -313,7 +319,7 @@ header a:hover{
 }
 
 .img-van img {
-    width: 610px;
+    width: 500px;
     border-radius: 20px;
 }
 
@@ -332,7 +338,7 @@ header a:hover{
 
 .historia {
     display: flex;
-    width: 80rem;
+    width: 70rem;
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -353,7 +359,7 @@ header a:hover{
 }
 
 .info-historia h2, .info-escolar h2 {
-    font-size: 45px;
+    font-size: 40px;
     color: var(--primary-color);
     margin-top: 0;
     font-weight: 400;
@@ -373,7 +379,7 @@ header a:hover{
 
 .info-historia p {
     color: var(--primary-color);
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     font-weight: 10;
 }
@@ -382,7 +388,7 @@ header a:hover{
 
 
 .img-marlene img {
-    width: 600px;
+    width: 500px;
     transform: translatey(50%);
     transition: 1s;
     opacity: 0;
@@ -421,7 +427,7 @@ header a:hover{
 }
 .text-escolar {
     display: flex;
-    width: 80rem;
+    width: 70rem;
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
@@ -434,6 +440,10 @@ header a:hover{
     transition: 1s ;
     opacity: 0;
     
+}
+
+.img-escolar img {
+    width: 500px;
 }
 
 .show-animate .img-escolar {
@@ -457,7 +467,7 @@ header a:hover{
 
 .info-escolar p {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
   
 
@@ -477,7 +487,7 @@ header a:hover{
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 84rem;
+    width: 74rem;
     transform: translateX(-100%) ;
     transition: 1s ;
     opacity: 0;
@@ -592,8 +602,8 @@ header a:hover{
     position: relative;
     color: white;
     font-weight: 400;
-    font-size: 45px;
-    right: 540px;
+    font-size: 40px;
+    right: 465px;
    
 }
 
@@ -653,7 +663,7 @@ header a:hover{
 
 
 .turismo p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .turismo button {
@@ -661,7 +671,7 @@ header a:hover{
     border: none;
     padding: 10px 15px;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 18px;
     transition: .5s;
 }
 
@@ -673,7 +683,7 @@ header a:hover{
 .turismo a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'inter', sans-serif;
     transition: .5;
 }
@@ -684,9 +694,9 @@ header a:hover{
 
 .quatro-quadrados {
     display: grid;
-    grid-template-columns: 390px 390px;
-    grid-template-rows: 360px 360px;
-    gap: 3rem;
+    grid-template-columns: 330px 330px;
+    grid-template-rows: 300px 300px;
+    gap: 1rem;
     transform: translatey(100%) ;
     transition: 1s ;
     opacity: 0
@@ -700,7 +710,7 @@ header a:hover{
     
     background-color: var(--azul-escuro);
     border: 1px solid white;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-radius: 30px;
 }
 
@@ -708,12 +718,15 @@ header a:hover{
     font-size: 30px;
     color: white;
     font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
 
 }
 
 .quadrado p {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
+    margin-top: 0;
 }
 
 footer {
