@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= família= Bebas+Neue & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --primary-color: #E1EFFC;
+    --azul-claro:#0181F8;
+    --azul-escuro:#1D4DAA;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-color);
+    flex-direction: column;
+}
+
+P, a{
+    font-family: 'Poppins', sans-serif;
+    color: #000A13;
+    font-weight: 500;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000A13;
+}
+
+.pagina-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+
+}
+
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60rem;
+    height: 4rem;
+    background-color: var(--azul-escuro);
+    border-radius: 90px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 20px;
+    padding: 0 50px 0 0 ;
+    z-index: 1000;
+}
+
+
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    margin-right: 25px;
+    
+}
+
+header li {
+    list-style: none;
+    z-index: 100000;
+    margin: 2px;
+    padding: 5px 15px;
+    transition: .5s;
+    border-radius: 50px;
+}
+
+header li:hover {
+    background-color: white;
+
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s;
+   
+}
+
+header a:hover{
+    color: var(--azul-escuro);
+}
+
+.marlene-transportes-web {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.marlene-transportes-web img {
+    display:flex ;
+    width: auto;
+    height: 60px;
+    
+}
+
+.marlene-transportes-web h4 {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.button-contato-web {
+    display: flex;
+}
+
+.button-contato-web a {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: var(--azul-escuro);
+}
+
+
+
+/* hero */
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 110px;
+    gap: 3rem;
+    z-index: 200;
+}
+
+.info-esquerda-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0rem;
+    transition: 1s;
+    transform: translateX(-100%);
+    opacity: 0;
+    margin-bottom: 10PX;
+}
+.show-animate .info-esquerda-mobile{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+.txt-img-marlene {
+    display: none;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.main-info h2 {
+    font-size: 85px;
+    font-weight: 500;
+    margin: 0;
+}
+.main-info p {
+    font-size:18px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.main-info span {
+    color: var(--azul-escuro);
+}
+
+.dual-card {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.card-escolar, .card-turismo {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    width: 200px;
+    height: 200px;
+    flex-direction: column; 
+    background-color: white;
+    gap: .2rem;
+    padding: 30px 30px 30px 30px; 
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-escolar h3 , .card-turismo h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size:25px ;
+}
+
+.card-escolar p , .card-turismo p {
+    font-size: 20px;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+  
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+.card-escolar  button , .card-turismo button {
+    border: none;
+    background-color: var(--azul-escuro);
+    border-radius: 20px;
+    
+    padding: 5px 15px;
+    transition: .5s;
+}
+
+.card-escolar  button:hover , .card-turismo button:hover{
+    background-color: white;
+    border: solid 1px var(--azul-escuro);
+}
+
+.card-escolar  a , .card-turismo a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.card-escolar  a:hover , .card-turismo a:hover {
+    color: var(--azul-escuro);
+}
+
+
+/* direita */
+
+.info-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 1s;
+    transform: translatey(-100%);
+    opacity: 1;
+    
+    
+}
+
+.show-animate .info-direita {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.dual-card-direita {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-esquerda {
+    background-color: var(--azul-escuro);
+    width: 200px;
+    height: 200px;
+    padding: 20px 25px; 
+    border-radius: 20px;
+}
+.card-esquerda img {
+    
+   width: 45px;
+}
+
+.card-esquerda p  {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+.card-direita {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    padding: 20px 25px; 
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-direita p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card-direita img {
+    width: 40px;
+    margin-bottom: 0px;
+}
+
+.img-van {
+    display: flex;
+}
+
+.img-van img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+/* container 2 */
+
+.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--azul-escuro);
+    width: 100%;
+    padding: 30px 0 ;
+    gap: 3rem;
+}
+
+.historia {
+    display: flex;
+    width: 70rem;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+   
+}
+
+.info-historia {
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.show-animate .info-historia { 
+    transform: translateX(0);
+   opacity: 1;
+}
+
+.info-historia h2, .info-escolar h2 {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.container-2 h2::after {
+    content: '';
+    display: block;
+    width: 10.5rem;
+    height: 0.4rem;
+    background-color: var(--primary-color); 
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.info-historia p {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin: 0;
+    font-weight: 10;
+}
+
+
+
+
+.img-marlene img {
+    width: 500px;
+    transform: translatey(50%);
+    transition: 1s;
+    opacity: 0;
+    
+    
+}
+
+.show-animate .img-marlene img {
+    transform: translatex(0);
+    opacity: 1;
+}
+
+
+
+.conteiner2meio {
+    background-color: var(--azul-escuro);
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 50px;
+}
+
+
+.conteiner2meio h2::after {
+    content: '';
+    display: block;
+    width: 10.5rem;
+    height: 0.4rem;
+    background-color: var(--primary-color); 
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 0;
+}
+.text-escolar {
+    display: flex;
+    width: 70rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 5rem;
+}
+
+.img-escolar {
+    display: flex;
+    transform: translatex(-100%);
+    transition: 1s ;
+    opacity: 0;
+    
+}
+
+.img-escolar img {
+    width: 500px;
+}
+
+.show-animate .img-escolar {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.info-escolar {
+    transform: translatex(-100%);
+    transition: 1s;
+    opacity: 0;
+    
+}
+
+.show-animate .info-escolar {
+    transform: translatex(0);
+    opacity: 1;
+}
+
+
+.info-escolar p {
+    color: white;
+    font-size: 18px;
+}
+  
+
+
+ /* terceiro container */
+
+ .container-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 80px;
+    
+}
+
+.rotas {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 74rem;
+    transform: translateX(-100%) ;
+    transition: 1s ;
+    opacity: 0;
+}
+
+.show-animate .rotas{
+    transform: translatex(0);
+    opacity: 1;
+}
+
+
+.rota-marlene{
+    padding: 40px;
+}
+
+.bordermid {
+    height: 300px;
+    border: solid 1px #e3d8d8;
+}
+
+.rota-andreia{
+    padding: 40px;
+}
+.rota-marlene h2, .rota-andreia h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.rota-marlene p, .rota-andreia p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6e6e6e;
+}
+.buttons-bairos {
+    display: flex;
+   
+
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.buttons-bairos button {
+    padding: 10px 20px;
+    background-color:var(--primary-color);
+    border: 1px solid var(--azul-escuro);
+    color: var(--azul-escuro);
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 100;
+    flex-wrap: wrap;
+}
+
+.buttons-colegios {
+    display: flex;
+    gap: .5rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.buttons-colegios button {
+    background-color: var(--azul-escuro);
+    color: #F3F9FF;
+    border: none;
+    padding: 10px 20px;
+    font-size:  20px;
+    border-radius: 15px;
+    font-weight: 100;
+}
+
+.botao-orcamento  button {
+    background-color: var(--azul-escuro);
+    color: #F3F9FF;
+    border: none;
+    padding: 10px 20px;
+    font-size:  20px;
+    border-radius: 15px;
+    font-weight: 100;
+    transition: .5s;
+}
+
+.botao-orcamento  button:hover {
+    background-color: white;
+    border: solid 1px var(--azul-escuro);
+    }
+
+.botao-orcamento a {
+    color: white;
+    
+    font-family: 'inter', sans-serif;
+    transition: .5s;
+}
+
+.botao-orcamento a:hover{
+    color: var(--azul-escuro);
+}
+
+/*container 4 */
+
+.container-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    flex-direction: column;
+    background-color: var(--azul-escuro);
+    width: 100% ;
+    padding: 0 0 70px 0;
+}
+.container-4 h2 {
+    position: relative;
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    right: 465px;
+   
+}
+
+
+
+.info-cont4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+   
+}
+
+
+.turismo, .tipos-de-turismo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+    width:15rem;
+    border-radius: 30px;
+    padding: 0 50px 20px 50px;
+    transform: translateX(-100%) ;
+    transition: 1s ;
+    opacity: 0;
+}
+
+
+.show-animate .turismo, .tipos-de-turismo {
+    transform: translateX(0) ;
+    opacity: 1;
+}
+
+
+.icon-text {
+    display: flex;
+    position: relative;
+    top: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.tipos-de-turismo {
+    display: none;
+}
+
+
+.text h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+.turismo p {
+    font-size: 18px;
+}
+
+.turismo button {
+    background-color: var(--azul-escuro);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-top: 18px;
+    transition: .5s;
+}
+
+.turismo button:hover{
+    background-color: white;
+    border: solid 1px var(--azul-escuro);
+}
+
+.turismo a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'inter', sans-serif;
+    transition: .5;
+}
+
+.turismo a:hover {
+     color: var(--azul-escuro);
+    }
+
+.quatro-quadrados {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    grid-template-rows: 300px 300px;
+    gap: 1rem;
+    transform: translatey(100%) ;
+    transition: 1s ;
+    opacity: 0
+}
+
+.show-animate .quatro-quadrados{
+    transform:translatey(0) ;
+    opacity: 1;
+}
+.quadrado {
+    
+    background-color: var(--azul-escuro);
+    border: 1px solid white;
+    padding: 15px 15px;
+    border-radius: 30px;
+}
+
+.quadrado h3 {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.quadrado p {
+    font-size: 18px;
+    color: white;
+    margin-top: 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    color: var(--azul-escuro);
+}
