@@ -14,3 +14,15 @@ window.onscroll = () => {
     }
     })
 }
+
+
+function fecharElementos() {
+    let banner = document.querySelector('.banner');
+    let filtro = document.querySelector('.filtro');
+
+    banner.style.display = "none";
+    filtro.style.display = "none";
+}
+
+// Adicionando um evento de clique diretamente na função
+document.addEventListener('click', fecharElementos);

@@ -82,9 +82,12 @@ header li {
     padding: 5px 15px;
     transition: .5s;
     border-radius: 50px;
+    background-color: none;
+    color: white;
 }
 
 header li:hover {
+    color: var(--azul-escuro);
     background-color: white;
 
 }
@@ -132,8 +135,75 @@ header a:hover{
     color: var(--azul-escuro);
 }
 
+/*banner*/
+
+.banner {
+    display: block;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.057);
+    position: relative;
+    margin: auto;
+    top: 300px;
+    background-color: var(--primary-color);
+    width: 30%;
+    z-index: 9999;
+    border: 2px solid var(--azul-escuro);
+    border-radius: 10px;
+    padding: 20px ;
+
+}
+
+.banner h2 {
+    font-size: 3rem;
+}
+
+.banner p{
+    font-size: 1.5rem;
+}
+
+.banner span {
+    color: var(--azul-escuro);
+    font-weight: bolder;
+}
+
+.btn-left{
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+}
+.btn-left button{
+    display: block;
+    background: var(--azul-escuro);
+    padding: 10PX 20px;
+    margin: 0;
+    font-size: 1rem;
+    border: none;
+    border-radius:5px;
+    color: white;
+    font-weight: 300px;
+    margin-right: 20px;
+}
+.x-left{
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+}
 
 
+
+
+
+ .filtro {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100svh;
+    background-color: rgba(0, 0, 0, 0.201);
+    backdrop-filter: blur(5px);
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 998;
+ }
 /* hero */
 
 .container {
@@ -219,9 +289,9 @@ header a:hover{
 }
 
 .card-escolar p , .card-turismo p {
-    font-size: 20px;
+    font-size:18px;
     margin-top: 10px ;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   
     font-family: 'poppins', sans-serif;
 }
@@ -305,7 +375,7 @@ header a:hover{
 }
 
 .card-direita p {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
